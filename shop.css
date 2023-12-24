@@ -1,0 +1,15 @@
+.product img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+#featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover > a{
+    background-color: blue;
+    color: azure;
+}
+
+.pagination a{
+    color: #000;
+}

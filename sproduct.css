@@ -1,0 +1,40 @@
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.sproduct select {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.sproduct input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.sproduct input:focus {
+  outline: none;
+}
+
+.sproduct .small-img1{
+    border-radius: 32px 62px;
+}
+.sproduct .small-img{
+    border-radius:  50px 32px;
+}
+
+.buy-btn{
+    opacity: 1;
+    border-radius: 32px 63px;
+}

@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif; 
+  background-color: rgba(128, 128, 128, 0.274);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+.p {
+  color: #0e0d0d;
+}
+
+.container > .naat{
+  font-size: 110px;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: blue;
+  color: aliceblue;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  border-radius: 32px 62px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover{
+  background-color: #1d1d1d;
+}
+
+hr {
+  width: 70%;
+  height: 2px;
+  background-color: #4e4bfb;
+}
+
+.star{
+  padding: 10px 0;
+}
+.star i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+/* ========================NAVBAR======================= */
+.navbar {
+  font-size: 15px;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 5px 10px  rgba(0, 0, 0, 0.384);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+  color: rgb(13, 13, 233);
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#bar {
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+  color: #000;
+}
+
+#bar:hover,
+#bar.active {
+  color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+  body > section.navbar1 > nav > div > button:hover,
+  body > section.navbar1 > nav > div > button:focus {
+    background-color: blue;
+  }
+
+  
+  body > section.navbar1 > nav > div > button:hover #bar,
+  body > section.navbar1 > nav > div > button:focus #bar{
+    color: white;
+  }
+
+  #navbarScroll > ul  {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  #navbarScroll > ul > li:nth-child(n) > a {
+    padding: 10px 0;
+  }
+}
+
+/* Mobile Nav */
+.navbar-light .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* ======================HOME==================== */
+#home {
+  background-image: url(img/back.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+
+#home span{
+  color: rgb(13, 13, 233);
+}
+
+/* ===================== NEW==================== */
+#new{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+#new .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+
+#new .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+#new .one:hover .details{
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.616);
+}
+
+#new .one .details button{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color:  #2a2a2a;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3 ease;
+}
+
+#new .one .details button:hover{
+  color: white;
+  border-bottom: 1px solid #fff;
+}
+
+#new .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+#new .one:nth-child(2) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: start;
+}
+
+#new{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+#featured{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+#clothes{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+#watches{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+#shoes{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+
+/* ======================= PRODUCT ======================= */
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img{
+  border-radius: 50px;
+  transition: 0.3 ease;
+}
+
+.product:hover img {
+  opacity: 0.9;
+}
+
+.product .buy-btn{
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ==================BANNER==================== */
+#banner{
+  background-image: url(img/banner/2.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.788) 0px 0px 3rem inset;
+}
+
+#banner h4{
+  color: #D8D8D8;
+}
+
+#banner h1{
+  color: #fff;
+}
+
+
+
+/* =======================FOOTER====================== */
+/* footer */
+.footer {
+	position: relative;
+	width: 100%;
+	background: #3586ff;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+  }
+  
+ footer h5{
+  color: #D8D8D8;
+  font-weight: 700;
+  font-size: 1.2rem;
+ }
+
+ footer li{
+  padding-bottom: 4px;
+ }
+
+ footer li a{
+  font-size: 0.8rem;
+  color: #D8D8D8;
+ }
+
+ footer li a:hover{
+  font-size: 0.8rem;
+  color: #000;
+ }
+
+ footer p{
+  color: #D8D8D8;
+  font-size: 0.8rem;
+ }
+
+ footer .copyright a {
+  color: #000;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transform: 0.3s ease;
+  margin: 0 5px;
+ }
+
+ footer .copyright a:hover{
+  background-color: blue;
+  color: #d8d8d8;
+ }
+
+
+  
+  /*wave and animation*/
+  footer .wave {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: url(https://i.ibb.co/rZt4Nhg/wave.png);
+	background-size: 1000px 100px;
+  }
+  
+  footer .wave#wave1 {
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 4s linear infinite;
+  }
+  
+  footer .wave#wave2 {
+	z-index: 999;
+	opacity: 0.5;
+	bottom: 10px;
+	animation: animateWave_02 4s linear infinite;
+  }
+  footer .wave#wave3 {
+	z-index: 1000;
+	opacity: 0.2;
+	bottom: 0;
+	animation: animateWave 3s linear infinite;
+  }
+  
+  footer .wave#wave4 {
+	z-index: 999;
+	opacity: 0.7;
+	bottom: 20px;
+	animation: animateWave_02 3s linear infinite;
+  }
+  
+  @keyframes animateWave {
+	0%{
+	  background-position-x: 1000px; 
+	}
+	100%{
+	  background-position-x: 0px; 
+	}
+  }
+  
+  @keyframes animateWave_02 {
+	0%{
+	  background-position-x: 0px; 
+	}
+	100%{
+	  background-position-x: 1000px; 
+	}
+  }
+  
